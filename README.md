@@ -8,7 +8,7 @@
 #### The linked list is a linear data structure that contains a sequence of elements such that each element links to its next element in the sequence. Each element in a linked list is called "Node".
 
 | Operation | Time Complexity(Average Case) | Time Complexity(Worst Case) |
-| --- | --- |
+| --- | --- | --- |
 | Insert | O(1) | O(1) |
 | Delete | O(1) | O(1) |
 | Search | O(1) | O(n) |
