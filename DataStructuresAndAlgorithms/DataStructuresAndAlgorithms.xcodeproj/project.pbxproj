@@ -17,6 +17,10 @@
 		323308972491D751002410BA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 323308962491D750002410BA /* README.md */; };
 		3233089E24927C17002410BA /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233089D24927C17002410BA /* QuickSort.swift */; };
 		323308A02492CC73002410BA /* QuickSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233089F2492CC73002410BA /* QuickSortTests.swift */; };
+		32BF9C80249332D900308E47 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9C7F249332D900308E47 /* BubbleSort.swift */; };
+		32BF9C82249334D900308E47 /* BubbleSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9C81249334D900308E47 /* BubbleSortTests.swift */; };
+		32BF9C84249386B400308E47 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9C83249386B400308E47 /* MergeSort.swift */; };
+		32BF9C86249389A200308E47 /* MergeSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9C85249389A200308E47 /* MergeSortTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		323308962491D750002410BA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3233089D24927C17002410BA /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		3233089F2492CC73002410BA /* QuickSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSortTests.swift; sourceTree = "<group>"; };
+		32BF9C7F249332D900308E47 /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
+		32BF9C81249334D900308E47 /* BubbleSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSortTests.swift; sourceTree = "<group>"; };
+		32BF9C83249386B400308E47 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		32BF9C85249389A200308E47 /* MergeSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				3233089F2492CC73002410BA /* QuickSortTests.swift */,
+				32BF9C81249334D900308E47 /* BubbleSortTests.swift */,
+				32BF9C85249389A200308E47 /* MergeSortTests.swift */,
 				323308752491D44A002410BA /* Info.plist */,
 			);
 			path = DataStructuresAndAlgorithmsTests;
@@ -168,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				3233089D24927C17002410BA /* QuickSort.swift */,
+				32BF9C83249386B400308E47 /* MergeSort.swift */,
+				32BF9C7F249332D900308E47 /* BubbleSort.swift */,
 			);
 			path = Sorting;
 			sourceTree = "<group>";
@@ -279,7 +291,9 @@
 				3233089E24927C17002410BA /* QuickSort.swift in Sources */,
 				323308852491D4E7002410BA /* AppDelegate.swift in Sources */,
 				323308952491D593002410BA /* SingleLinkedList.swift in Sources */,
+				32BF9C84249386B400308E47 /* MergeSort.swift in Sources */,
 				323308872491D4E7002410BA /* SceneDelegate.swift in Sources */,
+				32BF9C80249332D900308E47 /* BubbleSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +301,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32BF9C86249389A200308E47 /* MergeSortTests.swift in Sources */,
 				323308A02492CC73002410BA /* QuickSortTests.swift in Sources */,
+				32BF9C82249334D900308E47 /* BubbleSortTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

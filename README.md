@@ -32,6 +32,34 @@ print("hello world!")
 
 ## Sorting Algorithms
 
+### Fast
+| Algorithm | Time Complexity(Average Case) | Time Complexity(Worst Case) |
+| :---: | :---: | :---: |
+| Merge Sort | O(nlogn) | O(nlogn) |
+| Heap Sort | O(nlogn) | O(nlogn) |
+| Quick Sort | O(nlogn) | O(n^2) |
+
+<details><summary>Merge Sort</summary>
+<p>
+
+#### Merge sort is one of the most efficient sorting algorithms. With a time complexity of O(log n), it’s one of the fastest of all general-purpose sorting algorithms. The idea behind merge sort is divide and conquer; to break up a big problem into several smaller, easier to solve problems and then combine those solutions into a final result. The merge sort mantra is to split first and merge after.
+
+The merge sort algorithm works as follows:
+1. First split the list in half. You now have two unsorted lists:
+2. Now keep splitting the resulting list until you can’t split anymore. In the end, you will have one (sorted!) item in each list:
+3. Finally merge the lists together in the reverse order in which you split them. During each merge, you put the contents in sorted order. This is easy because each individual list has already been sorted:
+  
+| Operation | Time Complexity(Average Case) | Time Complexity(Worst Case) |
+| :---: | :---: | :---: |
+| Sort | O(nlogn) | O(nlogn) |
+
+| Space Complexity |
+| :---: |
+| O(nlogn) |
+
+</p>
+</details>
+
 <details><summary>Quick Sort</summary>
 <p>
 
@@ -61,7 +89,7 @@ Three steps are involved in whole process
 | :---: | :---: | :---: |
 | Sort | O(nlogn) | O(n^2) |
 
-| Space Complexity(Worst Case) |
+| Space Complexity |
 | :---: |
 | O(1) |
 
@@ -69,6 +97,23 @@ Three steps are involved in whole process
 
 1. To make sure at most O(log n) space is used, recur first into the smaller side of the partition, then use a tail call to recur into the other, or update the parameters to no longer include the now sorted smaller side, and iterate to sort the larger side.
 2. When the number of elements is below some threshold (perhaps ten elements), switch to a non-recursive sorting algorithm such as insertion sort that performs fewer swaps, comparisons or other operations on such small arrays. The ideal 'threshold' will vary based on the details of the specific implementation.
+
+</p>
+</details>
+
+### Slow
+| Algorithm | Time Complexity(Average Case) | Time Complexity(Worst Case) |
+| :---: | :---: | :---: |
+| Bubble Sort | O(n^2) | O(n^2) |
+
+| Space Complexity |
+| :---: |
+| O(1) |
+
+<details><summary>Bubble Sort</summary>
+<p>
+
+#### One of the simplest sorts is the bubble sort, which repeatedly compares adjacent values and swaps them, if needed, to perform the sort. The larger values in the set will therefore "bubble up" to the end of the collection.
 
 </p>
 </details>

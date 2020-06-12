@@ -6,8 +6,8 @@
 //  Copyright © 2020 Sudarshan Sharma. All rights reserved.
 //
 
-import XCTest
 @testable import DataStructuresAndAlgorithms
+import XCTest
 
 class QuickSortTests: XCTestCase {
     
