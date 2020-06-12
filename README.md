@@ -35,14 +35,14 @@ print("hello world!")
 ### Fast
 | Algorithm | Time Complexity(Average Case) | Time Complexity(Worst Case) |
 | :---: | :---: | :---: |
-| [Merge Sort][#-merge-sort] | O(nlogn) | O(nlogn) |
+| [Merge Sort](#merge-sort) | O(nlogn) | O(nlogn) |
 | Heap Sort | O(nlogn) | O(nlogn) |
-| Quick Sort | O(nlogn) | O(n^2) |
+| [Quick Sort](#quick-sort) | O(nlogn) | O(n^2) |
 
 ### Slow
 | Algorithm | Time Complexity(Average Case) | Time Complexity(Worst Case) |
 | :---: | :---: | :---: |
-| Bubble Sort | O(n^2) | O(n^2) |
+| [Bubble Sort](#bubble-sort) | O(n^2) | O(n^2) |
 
 | Space Complexity |
 | :---: |
@@ -52,7 +52,7 @@ print("hello world!")
 <details><summary>Details</summary>
 <p>
 
-#### Merge sort is one of the most efficient sorting algorithms. With a time complexity of O(log n), it’s one of the fastest of all general-purpose sorting algorithms. The idea behind merge sort is divide and conquer; to break up a big problem into several smaller, easier to solve problems and then combine those solutions into a final result. The merge sort mantra is to split first and merge after.
+Merge sort is one of the most efficient sorting algorithms. With a time complexity of O(log n), it’s one of the fastest of all general-purpose sorting algorithms. The idea behind merge sort is divide and conquer; to break up a big problem into several smaller, easier to solve problems and then combine those solutions into a final result. The merge sort mantra is to split first and merge after.
 
 The merge sort algorithm works as follows:
 1. First split the list in half. You now have two unsorted lists:
@@ -70,10 +70,11 @@ The merge sort algorithm works as follows:
 </p>
 </details>
 
-<details><summary>Quick Sort</summary>
+### Quick Sort
+<details><summary>Details</summary>
 <p>
 
-#### Quick Sort is an efficient inplace sorting algorithm that takes constant amount of space. Basic idea behind quick sort is to select a pivot element and arrange elements lower than pivot on left and greater than pivot on right to find a partition index. An ideal pivot would split the elements evenly between the less than and greater than partitions.
+Quick Sort is an efficient inplace sorting algorithm that takes constant amount of space. Basic idea behind quick sort is to select a pivot element and arrange elements lower than pivot on left and greater than pivot on right to find a partition index. An ideal pivot would split the elements evenly between the less than and greater than partitions.
 
 Three steps are involved in whole process
 
@@ -81,7 +82,7 @@ Three steps are involved in whole process
 2. Partitioning: Reorder the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position.
  3. Recur: Recursively apply the above steps to the sub-array of elements with smaller values than pivot and separately to the sub-array of elements with greater values than pivot.
 
-### Types of Quick Sort
+#### Types of Quick Sort
 1. Choose middle element as pivot
 2. `Lomuto’s partitioning` - Choose the last element as the pivot. 
 `Issues` - Duplicates end up in the less than partition and aren’t grouped together
@@ -90,7 +91,7 @@ Three steps are involved in whole process
 4. Median element strategy
 5. `Dutch national flag partitioning` - Technique to use if you have lots of duplicate elements in the array to be sorted.
 
-### Reading reference
+#### Reading reference
 1. https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort
 2. https://en.wikipedia.org/wiki/Quicksort
 3. https://www.youtube.com/watch?v=COk73cpQbFQ
@@ -103,7 +104,7 @@ Three steps are involved in whole process
 | :---: |
 | O(1) |
 
-### Optimizations
+#### Optimizations
 
 1. To make sure at most O(log n) space is used, recur first into the smaller side of the partition, then use a tail call to recur into the other, or update the parameters to no longer include the now sorted smaller side, and iterate to sort the larger side.
 2. When the number of elements is below some threshold (perhaps ten elements), switch to a non-recursive sorting algorithm such as insertion sort that performs fewer swaps, comparisons or other operations on such small arrays. The ideal 'threshold' will vary based on the details of the specific implementation.
@@ -111,10 +112,11 @@ Three steps are involved in whole process
 </p>
 </details>
 
-<details><summary>Bubble Sort</summary>
+### Bubble Sort
+<details><summary>Details</summary>
 <p>
 
-#### One of the simplest sorts is the bubble sort, which repeatedly compares adjacent values and swaps them, if needed, to perform the sort. The larger values in the set will therefore "bubble up" to the end of the collection.
+One of the simplest sorts is the bubble sort, which repeatedly compares adjacent values and swaps them, if needed, to perform the sort. The larger values in the set will therefore "bubble up" to the end of the collection.
 
 | Operation | Time Complexity(Average Case) | Time Complexity(Worst Case) |
 | :---: | :---: | :---: |
