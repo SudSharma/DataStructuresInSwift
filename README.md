@@ -78,9 +78,9 @@ Quick Sort is an efficient inplace sorting algorithm that takes constant amount 
 
 Three steps are involved in whole process
 
-1. Pivot selection: Pick an element, called a pivot, from the array (usually the leftmost or the rightmost element of the partition).
-2. Partitioning: Reorder the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position.
- 3. Recur: Recursively apply the above steps to the sub-array of elements with smaller values than pivot and separately to the sub-array of elements with greater values than pivot.
+1. `Pivot selection`: Pick an element, called a pivot, from the array (usually the leftmost or the rightmost element of the partition).
+2. `Partitioning`: Reorder the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position.
+ 3. `Recur`: Recursively apply the above steps to the sub-array of elements with smaller values than pivot and separately to the sub-array of elements with greater values than pivot.
 
 #### Types of Quick Sort
 1. Choose middle element as pivot
