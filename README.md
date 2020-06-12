@@ -35,7 +35,7 @@ print("hello world!")
 ### Fast
 | Algorithm | Time Complexity(Average Case) | Time Complexity(Worst Case) |
 | :---: | :---: | :---: |
-| [Merge Sort][#merge-sort] | O(nlogn) | O(nlogn) |
+| [Merge Sort][#-merge-sort] | O(nlogn) | O(nlogn) |
 | Heap Sort | O(nlogn) | O(nlogn) |
 | Quick Sort | O(nlogn) | O(n^2) |
 
