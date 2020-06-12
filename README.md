@@ -35,11 +35,21 @@ print("hello world!")
 ### Fast
 | Algorithm | Time Complexity(Average Case) | Time Complexity(Worst Case) |
 | :---: | :---: | :---: |
-| Merge Sort | O(nlogn) | O(nlogn) |
+| [Merge Sort][#merge-sort] | O(nlogn) | O(nlogn) |
 | Heap Sort | O(nlogn) | O(nlogn) |
 | Quick Sort | O(nlogn) | O(n^2) |
 
-<details><summary>Merge Sort</summary>
+### Slow
+| Algorithm | Time Complexity(Average Case) | Time Complexity(Worst Case) |
+| :---: | :---: | :---: |
+| Bubble Sort | O(n^2) | O(n^2) |
+
+| Space Complexity |
+| :---: |
+| O(1) |
+
+### Merge Sort
+<details><summary>Details</summary>
 <p>
 
 #### Merge sort is one of the most efficient sorting algorithms. With a time complexity of O(log n), it’s one of the fastest of all general-purpose sorting algorithms. The idea behind merge sort is divide and conquer; to break up a big problem into several smaller, easier to solve problems and then combine those solutions into a final result. The merge sort mantra is to split first and merge after.
@@ -101,19 +111,18 @@ Three steps are involved in whole process
 </p>
 </details>
 
-### Slow
-| Algorithm | Time Complexity(Average Case) | Time Complexity(Worst Case) |
-| :---: | :---: | :---: |
-| Bubble Sort | O(n^2) | O(n^2) |
-
-| Space Complexity |
-| :---: |
-| O(1) |
-
 <details><summary>Bubble Sort</summary>
 <p>
 
 #### One of the simplest sorts is the bubble sort, which repeatedly compares adjacent values and swaps them, if needed, to perform the sort. The larger values in the set will therefore "bubble up" to the end of the collection.
+
+| Operation | Time Complexity(Average Case) | Time Complexity(Worst Case) |
+| :---: | :---: | :---: |
+| Sort | O(n^2) | O(n^2) |
+
+| Space Complexity |
+| :---: |
+| O(1) |
 
 </p>
 </details>
