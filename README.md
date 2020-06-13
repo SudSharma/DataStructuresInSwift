@@ -1,11 +1,40 @@
 # Data Structures - In Swift
 
+## Heap
+
+<details><summary>Single Linked List</summary>
+<p>
+
+A heap is a complete binary tree, also known as a binary heap, that can be constructed using an array.
+Heaps are of two types:
+1. `Maxheap` - Elements with higher value have higher priority. In a max heap, parent nodes must always contain a value that is greater than or equal to the value in its children. The root node will always contain the highest value
+2. `Minheap` - Elements with lower value have higher priority. In a min heap, parent nodes must always contain a value that is less than or equal to the value in its children. The root node will always contain the lowest value.
+
+Another important property of a heap is that it is a complete binary tree. This means that every level must be filled, except for the last level.
+
+Applications of Heap
+1. Calculating the minimum or maximum element of a collection 
+2. Heap Sort
+3. Constructing a priority queue
+4. Constructing graph algorithms like Prim’s or Dijkstra’s with a priority queue.
+
+| Operation | Time Complexity(Worst Case) |
+| :---: | :---: |
+| Heap Creation | O(nlogn) |
+| Insert | O(logn) |
+| Remove | O(logn) |
+| Search | O(n) |
+| Peek | O(1) |
+
+</p>
+</details>
+
 ## Linked Lists
 
 <details><summary>Single Linked List</summary>
 <p>
 
-#### The linked list is a linear data structure that contains a sequence of elements such that each element links to its next element in the sequence. Each element in a linked list is called "Node".
+The linked list is a linear data structure that contains a sequence of elements such that each element links to its next element in the sequence. Each element in a linked list is called "Node".
 
 | Operation | Time Complexity(Average Case) | Time Complexity(Worst Case) |
 | :---: | :---: | :---: |
@@ -58,7 +87,10 @@ The merge sort algorithm works as follows:
 1. First split the list in half. You now have two unsorted lists:
 2. Now keep splitting the resulting list until you can’t split anymore. In the end, you will have one (sorted!) item in each list:
 3. Finally merge the lists together in the reverse order in which you split them. During each merge, you put the contents in sorted order. This is easy because each individual list has already been sorted:
-  
+
+#### Reading reference
+1. https://www.youtube.com/watch?v=TzeBrDU-JaY
+
 | Operation | Time Complexity(Average Case) | Time Complexity(Worst Case) |
 | :---: | :---: | :---: |
 | Sort | O(nlogn) | O(nlogn) |
@@ -117,6 +149,9 @@ Three steps are involved in whole process
 <p>
 
 One of the simplest sorts is the bubble sort, which repeatedly compares adjacent values and swaps them, if needed, to perform the sort. The larger values in the set will therefore "bubble up" to the end of the collection.
+
+#### Reading reference
+1. https://www.youtube.com/watch?v=Jdtq5uKz-w4
 
 | Operation | Time Complexity(Average Case) | Time Complexity(Worst Case) |
 | :---: | :---: | :---: |

@@ -16,11 +16,13 @@
 		323308952491D593002410BA /* SingleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323308942491D593002410BA /* SingleLinkedList.swift */; };
 		323308972491D751002410BA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 323308962491D750002410BA /* README.md */; };
 		3233089E24927C17002410BA /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233089D24927C17002410BA /* QuickSort.swift */; };
-		323308A02492CC73002410BA /* QuickSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233089F2492CC73002410BA /* QuickSortTests.swift */; };
 		32BF9C80249332D900308E47 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9C7F249332D900308E47 /* BubbleSort.swift */; };
-		32BF9C82249334D900308E47 /* BubbleSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9C81249334D900308E47 /* BubbleSortTests.swift */; };
 		32BF9C84249386B400308E47 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9C83249386B400308E47 /* MergeSort.swift */; };
-		32BF9C86249389A200308E47 /* MergeSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9C85249389A200308E47 /* MergeSortTests.swift */; };
+		32BF9C892493A6D800308E47 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9C882493A6D800308E47 /* Heap.swift */; };
+		32BF9CD32494447C00308E47 /* QuickSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9CD02494447C00308E47 /* QuickSortTests.swift */; };
+		32BF9CD42494447C00308E47 /* BubbleSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9CD12494447C00308E47 /* BubbleSortTests.swift */; };
+		32BF9CD52494447C00308E47 /* MergeSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9CD22494447C00308E47 /* MergeSortTests.swift */; };
+		32BF9CD92494452C00308E47 /* HeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9CD82494452C00308E47 /* HeapTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,11 +49,13 @@
 		323308942491D593002410BA /* SingleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLinkedList.swift; sourceTree = "<group>"; };
 		323308962491D750002410BA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3233089D24927C17002410BA /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
-		3233089F2492CC73002410BA /* QuickSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSortTests.swift; sourceTree = "<group>"; };
 		32BF9C7F249332D900308E47 /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
-		32BF9C81249334D900308E47 /* BubbleSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSortTests.swift; sourceTree = "<group>"; };
 		32BF9C83249386B400308E47 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
-		32BF9C85249389A200308E47 /* MergeSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortTests.swift; sourceTree = "<group>"; };
+		32BF9C882493A6D800308E47 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		32BF9CD02494447C00308E47 /* QuickSortTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSortTests.swift; sourceTree = "<group>"; };
+		32BF9CD12494447C00308E47 /* BubbleSortTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleSortTests.swift; sourceTree = "<group>"; };
+		32BF9CD22494447C00308E47 /* MergeSortTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeSortTests.swift; sourceTree = "<group>"; };
+		32BF9CD82494452C00308E47 /* HeapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +116,8 @@
 		323308722491D44A002410BA /* DataStructuresAndAlgorithmsTests */ = {
 			isa = PBXGroup;
 			children = (
-				3233089F2492CC73002410BA /* QuickSortTests.swift */,
-				32BF9C81249334D900308E47 /* BubbleSortTests.swift */,
-				32BF9C85249389A200308E47 /* MergeSortTests.swift */,
+				32BF9CCF2494445E00308E47 /* AlgorithmTests */,
+				32BF9CCE2494444900308E47 /* DataStructureTests */,
 				323308752491D44A002410BA /* Info.plist */,
 			);
 			path = DataStructuresAndAlgorithmsTests;
@@ -153,6 +156,7 @@
 		323308812491D4CB002410BA /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				32BF9C872493A6CC00308E47 /* Trees */,
 				323308932491D583002410BA /* LinkedLists */,
 			);
 			path = DataStructures;
@@ -182,6 +186,32 @@
 				32BF9C7F249332D900308E47 /* BubbleSort.swift */,
 			);
 			path = Sorting;
+			sourceTree = "<group>";
+		};
+		32BF9C872493A6CC00308E47 /* Trees */ = {
+			isa = PBXGroup;
+			children = (
+				32BF9C882493A6D800308E47 /* Heap.swift */,
+			);
+			path = Trees;
+			sourceTree = "<group>";
+		};
+		32BF9CCE2494444900308E47 /* DataStructureTests */ = {
+			isa = PBXGroup;
+			children = (
+				32BF9CD82494452C00308E47 /* HeapTests.swift */,
+			);
+			path = DataStructureTests;
+			sourceTree = "<group>";
+		};
+		32BF9CCF2494445E00308E47 /* AlgorithmTests */ = {
+			isa = PBXGroup;
+			children = (
+				32BF9CD12494447C00308E47 /* BubbleSortTests.swift */,
+				32BF9CD22494447C00308E47 /* MergeSortTests.swift */,
+				32BF9CD02494447C00308E47 /* QuickSortTests.swift */,
+			);
+			path = AlgorithmTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +268,7 @@
 					};
 					3233086E2491D44A002410BA = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 						TestTargetID = 323308582491D449002410BA;
 					};
 				};
@@ -290,6 +321,7 @@
 				323308862491D4E7002410BA /* ContentView.swift in Sources */,
 				3233089E24927C17002410BA /* QuickSort.swift in Sources */,
 				323308852491D4E7002410BA /* AppDelegate.swift in Sources */,
+				32BF9C892493A6D800308E47 /* Heap.swift in Sources */,
 				323308952491D593002410BA /* SingleLinkedList.swift in Sources */,
 				32BF9C84249386B400308E47 /* MergeSort.swift in Sources */,
 				323308872491D4E7002410BA /* SceneDelegate.swift in Sources */,
@@ -301,9 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32BF9C86249389A200308E47 /* MergeSortTests.swift in Sources */,
-				323308A02492CC73002410BA /* QuickSortTests.swift in Sources */,
-				32BF9C82249334D900308E47 /* BubbleSortTests.swift in Sources */,
+				32BF9CD52494447C00308E47 /* MergeSortTests.swift in Sources */,
+				32BF9CD32494447C00308E47 /* QuickSortTests.swift in Sources */,
+				32BF9CD42494447C00308E47 /* BubbleSortTests.swift in Sources */,
+				32BF9CD92494452C00308E47 /* HeapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +524,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83K5ZDN9P7;
 				INFOPLIST_FILE = DataStructuresAndAlgorithmsTests/Info.plist;
@@ -502,6 +536,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SudarshanSharma.DataStructuresAndAlgorithmsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataStructuresAndAlgorithms.app/DataStructuresAndAlgorithms";
@@ -513,6 +548,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83K5ZDN9P7;
 				INFOPLIST_FILE = DataStructuresAndAlgorithmsTests/Info.plist;
