@@ -2,7 +2,7 @@
 
 ## Heap
 
-<details><summary>Single Linked List</summary>
+<details><summary>Details</summary>
 <p>
 
 A heap is a complete binary tree, also known as a binary heap, that can be constructed using an array.
