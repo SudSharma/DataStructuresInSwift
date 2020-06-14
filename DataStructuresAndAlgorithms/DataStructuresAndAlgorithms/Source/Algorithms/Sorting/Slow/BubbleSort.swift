@@ -14,13 +14,11 @@ class BubbleSort<T: Comparable> {
             var swapped = false
             for j in 1..<values.count - i {
                 if values[j] < values[j - 1] {
-                    let temp = values[j - 1]
-                    values[j - 1] = values[j]
-                    values[j] = temp
+                    values.swapAt(j, j - 1)
                     swapped = true
                 }
             }
-            
+            print(values)
             if !swapped {
                 break
             }

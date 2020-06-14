@@ -72,6 +72,7 @@ print("hello world!")
 | Algorithm | Time Complexity(Average Case) | Time Complexity(Worst Case) |
 | :---: | :---: | :---: |
 | [Bubble Sort](#bubble-sort) | O(n^2) | O(n^2) |
+| [Selection Sort](#selection-sort) | O(n^2) | O(n^2) |
 
 | Space Complexity |
 | :---: |
@@ -169,6 +170,26 @@ One of the simplest sorts is the bubble sort, which repeatedly compares adjacent
 
 #### Reading reference
 1. https://www.youtube.com/watch?v=Jdtq5uKz-w4
+
+| Operation | Time Complexity(Average Case) | Time Complexity(Worst Case) |
+| :---: | :---: | :---: |
+| Sort | O(n^2) | O(n^2) |
+
+| Space Complexity |
+| :---: |
+| O(1) |
+
+</p>
+</details>
+
+### Selection Sort
+<details><summary>Details</summary>
+<p>
+
+Selection sort is a simple sorting algorithm. This sorting algorithm is an in-place comparison-based algorithm. The smallest element is selected from the  array and is swapped with the leftmost element, and that element becomes a part of the sorted array. This process continues moving unsorted array boundary by one element to the right.
+
+#### Reading reference
+1. https://www.youtube.com/watch?v=GUDLRan2DWM&t
 
 | Operation | Time Complexity(Average Case) | Time Complexity(Worst Case) |
 | :---: | :---: | :---: |
