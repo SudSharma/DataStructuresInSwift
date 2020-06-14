@@ -65,7 +65,7 @@ print("hello world!")
 | Algorithm | Time Complexity(Average Case) | Time Complexity(Worst Case) |
 | :---: | :---: | :---: |
 | [Merge Sort](#merge-sort) | O(nlogn) | O(nlogn) |
-| Heap Sort | O(nlogn) | O(nlogn) |
+| [Heap Sort](#heap-sort) | O(nlogn) | O(nlogn) |
 | [Quick Sort](#quick-sort) | O(nlogn) | O(n^2) |
 
 ### Slow
@@ -98,6 +98,19 @@ The merge sort algorithm works as follows:
 | Space Complexity |
 | :---: |
 | O(nlogn) |
+
+</p>
+</details>
+
+### Heap Sort
+<details><summary>Details</summary>
+<p>
+
+A heap is a partially sorted binary tree that is stored inside an array. The heap sort algorithm takes advantage of the structure of the heap to perform a fast sort. To sort from lowest to highest, heap sort first converts the unsorted array to a max-heap, so that the first element in the array is the largest.
+
+1. Swap the first element (index 0) with the last one at index n-1 on heap. Now the new root node, will be smaller than its children, so we fix up the max-heap up to element n-2 using the shift down or "heapify" procedure.
+Important: When we fix the heap, we ignore the last item at index n-1. That now contains the array's maximum value, so it is in its final sorted place already.
+2. We repeat this process until we arrive at the root node and then the whole array is sorted.
 
 </p>
 </details>

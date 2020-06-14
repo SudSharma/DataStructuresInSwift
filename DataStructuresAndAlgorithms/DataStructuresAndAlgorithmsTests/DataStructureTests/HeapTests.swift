@@ -12,12 +12,7 @@ import XCTest
 class HeapTests: XCTestCase {
     
     func test1() throws {
-        let initialArray = [1,12,3,4,1,6,8,7]
-        let heap = Heap<Int>()
-        for item in initialArray {
-            heap.insert(item)
-        }
-        
+        let heap = Heap([1,12,3,4,1,6,8,7])
         XCTAssertTrue(heap.storage == [1,1,3,7,4,6,8,12])
         
         try heap.remove()

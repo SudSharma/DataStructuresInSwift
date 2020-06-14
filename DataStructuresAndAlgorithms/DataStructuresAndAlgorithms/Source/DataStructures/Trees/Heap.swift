@@ -25,16 +25,13 @@ class Heap<T: Comparable> {
     var storage = [T]()
     var type: HeapType = .min
     
-    func hasLeftChild(_ index: Int) -> Bool {
-        return leftChildIndex(of: index) < storage.count
-    }
-    
-    func hasParent(_ index: Int) -> Bool {
-        return parentIndex(ofChild: index) >= 0
-    }
-    
-    func hasRightChild(_ index: Int) -> Bool {
-        return rightChildIndex(of: index) < storage.count
+    init(_ elements: [T]? = nil, type: HeapType = .min) {
+        self.type = type
+        if let tempElements = elements {
+            for element in tempElements {
+                insert(element)
+            }
+        }
     }
     
     func insert(_ value: T) {
@@ -67,25 +64,6 @@ class Heap<T: Comparable> {
         shiftDown()
         
         return elementRemoved
-    }
-    
-    func shiftUp() {
-        var index = storage.count - 1
-        
-        if type == .min {
-            while parentIndex(ofChild: index) >= 0 && storage[parentIndex(ofChild: index)] > storage[index] {
-                let parentIndexValue = parentIndex(ofChild: index)
-                swap(item1Index: index, item2Index: parentIndexValue)
-                index = parentIndexValue
-            }
-        }
-        else if type == .max {
-            while parentIndex(ofChild: index) >= 0 && storage[parentIndex(ofChild: index)] < storage[index] {
-                let parentIndexValue = parentIndex(ofChild: index)
-                swap(item1Index: index, item2Index: parentIndexValue)
-                index = parentIndexValue
-            }
-        }
     }
     
     func shiftDown() {
@@ -125,6 +103,81 @@ class Heap<T: Comparable> {
         }
     }
     
+    func shiftDown(fromIndex: Int, toIndex: Int) {
+        var index = fromIndex
+        
+        if type == .min {
+            while hasLeftChild(index) {
+                var smallChildIndex = leftChildIndex(of: index)
+                if hasRightChild(index) && storage[rightChildIndex(of: index)] < storage[leftChildIndex(of: index)] {
+                    smallChildIndex = rightChildIndex(of: index)
+                }
+                
+                if smallChildIndex > toIndex || storage[index] < storage[smallChildIndex] {
+                    break
+                }
+                else {
+                    swap(item1Index: index, item2Index: smallChildIndex)
+                }
+                index = smallChildIndex
+            }
+        }
+        else if type == .max {
+            while hasLeftChild(index) {
+                var smallChildIndex = leftChildIndex(of: index)
+                if hasRightChild(index) && storage[rightChildIndex(of: index)] > storage[leftChildIndex(of: index)] {
+                    smallChildIndex = rightChildIndex(of: index)
+                }
+                
+                if smallChildIndex > toIndex || storage[index] > storage[smallChildIndex] {
+                    break
+                }
+                else {
+                    swap(item1Index: index, item2Index: smallChildIndex)
+                }
+                index = smallChildIndex
+            }
+        }
+    }
+    
+    func shiftUp(fromIndex: Int, toIndex: Int) {
+        var index = fromIndex
+        
+        if type == .min {
+            while parentIndex(ofChild: index) >= toIndex && storage[parentIndex(ofChild: index)] > storage[index] {
+                let parentIndexValue = parentIndex(ofChild: index)
+                swap(item1Index: index, item2Index: parentIndexValue)
+                index = parentIndexValue
+            }
+        }
+        else if type == .max {
+            while parentIndex(ofChild: index) >= toIndex && storage[parentIndex(ofChild: index)] < storage[index] {
+                let parentIndexValue = parentIndex(ofChild: index)
+                swap(item1Index: index, item2Index: parentIndexValue)
+                index = parentIndexValue
+            }
+        }
+    }
+    
+    func shiftUp() {
+        var index = storage.count - 1
+        
+        if type == .min {
+            while parentIndex(ofChild: index) >= 0 && storage[parentIndex(ofChild: index)] > storage[index] {
+                let parentIndexValue = parentIndex(ofChild: index)
+                swap(item1Index: index, item2Index: parentIndexValue)
+                index = parentIndexValue
+            }
+        }
+        else if type == .max {
+            while parentIndex(ofChild: index) >= 0 && storage[parentIndex(ofChild: index)] < storage[index] {
+                let parentIndexValue = parentIndex(ofChild: index)
+                swap(item1Index: index, item2Index: parentIndexValue)
+                index = parentIndexValue
+            }
+        }
+    }
+    
     func swap(item1Index: Int, item2Index: Int) {
         let temp = storage[item1Index]
         storage[item1Index] = storage[item2Index]
@@ -132,6 +185,18 @@ class Heap<T: Comparable> {
     }
     
     // Mark - Get Parent or Child
+    
+    func hasLeftChild(_ index: Int) -> Bool {
+        return leftChildIndex(of: index) < storage.count
+    }
+    
+    func hasParent(_ index: Int) -> Bool {
+        return parentIndex(ofChild: index) >= 0
+    }
+    
+    func hasRightChild(_ index: Int) -> Bool {
+        return rightChildIndex(of: index) < storage.count
+    }
     
     func leftChild(for index: Int) throws -> T {
         let count = storage.count
