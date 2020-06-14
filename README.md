@@ -112,6 +112,10 @@ A heap is a partially sorted binary tree that is stored inside an array. The hea
 Important: When we fix the heap, we ignore the last item at index n-1. That now contains the array's maximum value, so it is in its final sorted place already.
 2. We repeat this process until we arrive at the root node and then the whole array is sorted.
 
+| Operation | Time Complexity(Average Case) | Time Complexity(Worst Case) |
+| :---: | :---: | :---: |
+| Sort | O(nlogn) | O(nlogn) |
+
 </p>
 </details>
 
